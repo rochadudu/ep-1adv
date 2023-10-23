@@ -10,30 +10,33 @@
 </head>
 <body>
     <!-- Cabeçalho -->
-    <header class="animated-header" id="header">
+    <header class="animated-header">
         <div id="logo">
             <img src="img/logo6.png" alt="Logotipo da Empresa">
         </div>
-        <div id="titulo1">
-            <div class="telefo">
-                <h1>R & C</h1>
-            </div>
-            <div class="titulo2">
-                <h2>ADVOGADOS</h2>
-            </div>
+    
+</div>
+<div id="titulo 1">
+    <div class="telefo">
+        <h1>R & C</h1>
+    </div>
+        
+        <div class="titulo 2">
+            <h2>ADVOGADOS</h2>
         </div>
+        
+</div>
+    
         <div id="contact-info">
             <div class="telefo">
                 <h3>Telefone:</h3>
             </div>
-            <p>(45) 3028 5939</p>
-            <div class="telefo">
-                <h3>E-mail</h3>
-            </div>
-            <p>advocacia_rc@hotmail.com</p>
+                <p>(45) 3028 5939</p>
+                <div class="telefo">
+                    <h3>E-mail</h3>
+                </div>
+                <p>advocacia_rc@hotmail.com</p>
         </div>
-    </header>
-    
        
     </header>
     
@@ -151,26 +154,22 @@
     
 </section>
 <div class="caixa-contato">
-    <div class="texto-contato">
-        <h2>Se você tiver alguma dúvida ou precisar de assistência, não hesite em entrar em contato conosco!</h2>
-    </div>
+    <h2>Se você tiver alguma dúvida ou precisar de assistência, não hesite em entrar em contato conosco!</h2>
 
     <div class="container2">
-        <i class="fab fa-whatsapp icone"></i>
+        <i class="fab fa-whatsapp"></i>
         <a href="https://wa.me/5545999386015" target="_blank">WhatsApp</a>
     </div>
 
     <div class="container3">
-        <i class="fas fa-phone icone"></i>
+        <i class="fas fa-phone"></i>
         <a href="tel:(45) 3028 5939">Telefone</a>
     </div>
-
-    <div class="container4">
-        <i class="far fa-envelope icone"></i>
-        <h4><a href="mailto:advocacia_rc@hotmail.com">Email</a></h4>
-    </div>
 </div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    
+</section>
 
     <!-- Seção Localização -->
     <section id="location">
@@ -223,36 +222,13 @@
     </div>
     <!-- Rodapé -->
     <footer>
-        <!-- Rodapé -->
-<footer class="rodape">
-    <div class="algo">
-        <div class="coluna">
-            <h3>Localização</h3>
-            <p>Endereço: Av. Exemplo, 123<br>Cidade, Estado, CEP 12345-678</p>
+        <div class="footer-top"> 
+            <div class="container"> <div class="row"> <div class="col-lg-4 col-md-6"> <div class="footer-widget"> <h3>Contato</h3> <ul class="contact-info"> <li><i class="fas fa-map-marker-alt"></i> Av. José Lins de Vasconcelos, 5390 - Santa Rita, Rio de Janeiro - RJ, 20740-025</li> <li><i class="fas fa-phone"></i> (21) 2655-2310</li> <li><i class="fas fa-envelope"></i> contato@accadrolli.com.br</li> </ul> </div> </div> <div class="col-lg-4 col-md-6"> <div class="footer-widget"> <h3>Menu</h3> <ul class="links"> <li><a href="#">Início</a></li> <li><a href="#">Produtos</a></li> <li><a href="#">Blog</a></li> <li><a href="#">Sobre Nós</a></li> <li><a href="#">Contato</a></li> </ul> </div> </div> <div class="col-lg-4 col-md-6"> <div class="footer-widget"> <h3>Instagram</h3> <ul class="instagram-list"> <li><img src="assets/images/instagram-1.jpg" alt=""></li> <li><img src="assets/images/instagram-2.jpg" alt=""></li> <li><img src="assets/images/instagram-3.jpg" alt=""></li> <li><img src="assets/images/instagram-4.jpg" alt=""></li> <li><img src="assets/images/instagram-5.jpg" alt=""></li> <li><img src="assets/images/instagram-6.jpg" alt=""></li> </ul> </div> </div> </div> </div> </div> <div class="footer-bottom"> <div class="container"> <div class="row"> <div class="col-md-6"> <p>&copy; 2021 - Todos os direitos reservados.</p> </div> <div class="col-md-6"> <ul class="footer-nav"> <li><a href="#">Termos de Uso</a></li> <li><a href="#">Política de Privacidade</a></li> </ul> </div> </div> </div> </div>
         </div>
-        <div class="coluna">
-            <h3>Nome da Empresa</h3>
-            <p>© 2023 Nome da Empresa</p>
-        </div>
-        <div class="coluna">
-            <h3>Contato</h3>
-            <p>Telefone: (55) 1234-5678<br>Email: contato@exemplo.com</p>
-        </div>
-        
-        <div class="coluna">
-            <h3>Assine nossa Newsletter</h3>
-            <form id="newsletter-form">
-                <input type="email" id="newsletter-email" placeholder="Seu email">
-                <button type="submit" id="newsletter-submit">Inscrever-se</button>
-            </form>
-        </div>
-    </div>
-</footer>
-
         <!-- Adicione informações adicionais do rodapé, como direitos autorais e informações de contato. -->
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="adv.js"></script>
+
+    <script src="adv.js"></script>
 </body>
 </html>
 

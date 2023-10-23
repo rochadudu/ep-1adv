@@ -1,45 +1,30 @@
-// Seleciona todos os elementos com a classe 'slider'
-const slider = document.querySelectorAll('.slider');
+$(document).ready(function() {
+  var header = $("#header");
+  var headerOffset = header.offset().top;
 
-// Seleciona os botões de anterior e próximo pelo ID
-const btnPrev = document.getElementById('prev-button');
-const btnNext = document.getElementById('next-button');
-
-// Inicializa a variável para acompanhar o slide atual
-let currentSlide = 0;
-
-// Função para ocultar todos os slides
-function hideSlider() {
-  slider.forEach(item => item.classList.remove('on'));
-}
-
-// Função para mostrar o slide atual
-function showSlider() {
-  slider[currentSlide].classList.add('on');
-}
-
-// Função para avançar para o próximo slide
-function nextSlider() {
-  hideSlider();
-  if (currentSlide === slider.length - 1) {
-    currentSlide = 0; // Volta ao primeiro slide se estiver no último
-  } else {
-    currentSlide++;
-  }
-  showSlider();
-}
-
-// Função para voltar para o slide anterior
-function prevSlider() {
-  hideSlider();
-  if (currentSlide === 0) {
-    currentSlide = slider.length - 1; // Volta ao último slide se estiver no primeiro
-  } else {
-    currentSlide--;
-  }
-  showSlider();
-}
+  $(window).scroll(function() {
+      if ($(this).scrollTop() > headerOffset) {
+          header.addClass("fixed");
+      } else {
+          header.removeClass("fixed");
+      }
+  });
+});
 
 // Adiciona ouvintes de eventos aos botões de anterior e próximo
 btnNext.addEventListener('click', nextSlider);
 btnPrev.addEventListener('click', prevSlider);
+
+// Encontre o formulário e os elementos de input
+const newsletterForm = document.getElementById("newsletter-form");
+const newsletterEmail = document.getElementById("newsletter-email");
+
+// Quando o formulário for enviado
+newsletterForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const email = newsletterEmail.value;
+    // Faça algo com o email (por exemplo, envie para o servidor ou armazene localmente)
+    console.log("Email inscrito: " + email);
+    // Limpe o campo de email
+    newsletterEmail.value = "";
+});

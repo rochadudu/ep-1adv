@@ -6,6 +6,7 @@
     <title>R & C ADVOGADOS</title>
     <link rel="stylesheet" href="adv.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -151,9 +152,7 @@
     
 </section>
 <div class="caixa-contato">
-    <div class="texto-contato">
-        <h2>Se você tiver alguma dúvida ou precisar de assistência, não hesite em entrar em contato conosco!</h2>
-    </div>
+    <h2>Se você tiver alguma dúvida ou precisar de assistência, não hesite em entrar em contato conosco!</h2>
 
     <div class="container2">
         <i class="fab fa-whatsapp icone"></i>
@@ -170,7 +169,11 @@
         <h4><a href="mailto:advocacia_rc@hotmail.com">Email</a></h4>
     </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+
+
+    
+</section>
 
     <!-- Seção Localização -->
     <section id="location">

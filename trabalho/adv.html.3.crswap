@@ -5,35 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R & C ADVOGADOS</title>
     <link rel="stylesheet" href="adv.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    
 </head>
 <body>
     <!-- Cabeçalho -->
-    <header class="animated-header" id="header">
+    <header class="animated-header">
         <div id="logo">
             <img src="img/logo6.png" alt="Logotipo da Empresa">
         </div>
-        <div id="titulo1">
-            <div class="telefo">
-                <h1>R & C</h1>
-            </div>
-            <div class="titulo2">
-                <h2>ADVOGADOS</h2>
-            </div>
+    
+</div>
+<div id="titulo 1">
+    <div class="telefo">
+        <h1>R & C</h1>
+    </div>
+        
+        <div class="titulo 2">
+            <h2>ADVOGADOS</h2>
         </div>
+        
+</div>
+    
         <div id="contact-info">
             <div class="telefo">
                 <h3>Telefone:</h3>
             </div>
-            <p>(45) 3028 5939</p>
-            <div class="telefo">
-                <h3>E-mail</h3>
-            </div>
-            <p>advocacia_rc@hotmail.com</p>
+                <p>(45) 3028 5939</p>
+                <div class="telefo">
+                    <h3>E-mail</h3>
+                </div>
+                <p>advocacia_rc@hotmail.com</p>
         </div>
-    </header>
-    
        
     </header>
     
@@ -75,7 +77,7 @@
 
     <!-- Seção Sobre a Empresa -->
     <section class="container">
-        <h1>Sobre Nós:</h1><br>
+        <h2>Sobre Nós:</h2><br>
 
         <div class="imagem-texto">
             <img src="img/advogados1.jpg" class="imagem-direita">
@@ -95,7 +97,7 @@
     <!-- Seção Áreas de Atuação -->
     <section class="servicos">
         <div class="titulo1">
-        <h1> Principais Áreas de Atuação</h1>
+        <h2> Principais Áreas de Atuação</h2>
     </div>
 <br>
     <div class="card-container">
@@ -150,27 +152,20 @@
     <h1>Entre em contato</h1> <br>
     
 </section>
-<div class="caixa-contato">
-    <div class="texto-contato">
-        <h2>Se você tiver alguma dúvida ou precisar de assistência, não hesite em entrar em contato conosco!</h2>
+    <div class="contato">
+       <div class="container1">
+        WhatsApp
+       </div>
+       <div class="container2">
+        Telefone
+       </div>
+       <div class="container3">
+        
+       </div>
+        
+        <!-- Adicione um formulário de contato e informações de contato alternativas. -->
     </div>
-
-    <div class="container2">
-        <i class="fab fa-whatsapp icone"></i>
-        <a href="https://wa.me/5545999386015" target="_blank">WhatsApp</a>
-    </div>
-
-    <div class="container3">
-        <i class="fas fa-phone icone"></i>
-        <a href="tel:(45) 3028 5939">Telefone</a>
-    </div>
-
-    <div class="container4">
-        <i class="far fa-envelope icone"></i>
-        <h4><a href="mailto:advocacia_rc@hotmail.com">Email</a></h4>
-    </div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</section>
 
     <!-- Seção Localização -->
     <section id="location">
@@ -223,36 +218,28 @@
     </div>
     <!-- Rodapé -->
     <footer>
-        <!-- Rodapé -->
-<footer class="rodape">
-    <div class="algo">
-        <div class="coluna">
-            <h3>Localização</h3>
-            <p>Endereço: Av. Exemplo, 123<br>Cidade, Estado, CEP 12345-678</p>
+        <div id="logo">
+            <img src="https://o.remove.bg/downloads/b678c260-1ed1-4b6a-86be-c33a90273bfd/R1-removebg-preview.png" alt="Logotipo da Empresa" width="3000" height="2000" >
         </div>
-        <div class="coluna">
-            <h3>Nome da Empresa</h3>
-            <p>© 2023 Nome da Empresa</p>
+    
+</div>
+        <div id="company-name">
+            <h1 id="color-changing-title">R & C ADVOGADOS</h1>
+        </div>  
+        <div id="contact-info">
+            <div class="telefo">
+                <h3>Telefone:</h3>
+            </div>
+                <p>(45) 3028 5939</p>
+                <div class="telefo">
+                    <h3>E-mail</h3>
+                </div>
+                <p>advocacia_rc@hotmail.com</p>
         </div>
-        <div class="coluna">
-            <h3>Contato</h3>
-            <p>Telefone: (55) 1234-5678<br>Email: contato@exemplo.com</p>
-        </div>
-        
-        <div class="coluna">
-            <h3>Assine nossa Newsletter</h3>
-            <form id="newsletter-form">
-                <input type="email" id="newsletter-email" placeholder="Seu email">
-                <button type="submit" id="newsletter-submit">Inscrever-se</button>
-            </form>
-        </div>
-    </div>
-</footer>
-
         <!-- Adicione informações adicionais do rodapé, como direitos autorais e informações de contato. -->
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="adv.js"></script>
+
+    <script src="adv.js"></script>
 </body>
 </html>
 
