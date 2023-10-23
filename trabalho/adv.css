@@ -73,7 +73,6 @@ nav ul li a:hover {
     right: 0;
 }
  
-
 #company-name h1 {
     font-size: 24px;
     text-decoration: underline;
@@ -147,12 +146,6 @@ nav a {
     background-color: #fffcfc;
 }
 
-/* Estilo do rodapé */
-
-
-/* Estilize links */
-
-
 /* Media queries para tornar o CSS responsivo */
 
 @media (max-width: 768px) {
@@ -186,8 +179,6 @@ nav a {
     }
 }
 
-
-
 .container {
     background: -webkit-linear-gradient(left,#283959,#091026);
     box-shadow: 0 0 10px #212529;
@@ -202,7 +193,6 @@ nav a {
 .titulo{
     text-align: center;
     color: #404040;
-    text-decoration: underline #d89700;
 }
 
 .carousel-wrapper{
@@ -398,31 +388,32 @@ h2 {
     color: #5e5e5e;
 }
 
-
-
 .container2, .container3, .container4 {
     display: flex;
     align-items: center;
     justify-content: center; /* Alinhar o conteúdo à direita */
     border-radius: 5px;
     height: 50px;
-    width: 250px;
+    width: 600px;
     margin: 10px 0; /* Ajuste a margem conforme necessário */
 }
 
 .container2 {
     background-color: #17d617e1;
     color: black;
+    box-shadow: 0 4px 6px #000000ab;
 }
 
 .container3 {
     background-color: #171ad6;
     color: rgba(9, 255, 0, 0.801);
+    box-shadow: 0 4px 6px #000000ab;
 }
 
 .container4 {
     background-color: #e60000bd;
     color: rgb(241, 241, 241);
+    box-shadow: 0 4px 6px #000000ab;
 }
 
 .icone {
@@ -434,12 +425,27 @@ a {
     color: #ffffff;
 }
 
-h4 {
-    color: #000000;
+.container2:hover{
+    background-color: #2ecc71; /* Nova cor de fundo quando hover */
+}
+
+.container3:hover{
+    background-color: #1e3adb; /* Nova cor de fundo quando hover */
+}
+
+.container4:hover{
+    background-color: #d32626; /* Nova cor de fundo quando hover */
 }
 
 
 
+
+
+
+
+.txt {
+    font-size: 36px; /* Ajuste o tamanho do texto conforme necessário */
+}
 
 .rodape {
     background: -webkit-linear-gradient(left,#283959,#091026);
@@ -457,8 +463,6 @@ h4 {
     flex: 1;
     padding: 0 20px;
 }
-
-
 
 .fa {
     font-size: 24px;

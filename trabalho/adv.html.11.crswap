@@ -69,7 +69,7 @@
       <br>
     <!-- Seção de Página Inicial -->
     <section class="titulo">
-        <h1 class="txt">𝐄𝐬𝐜𝐫𝐢𝐭𝐨𝐫𝐢𝐨 𝐝𝐞 𝐀𝐝𝐯𝐨𝐜𝐚𝐜𝐢𝐚</h1> <br>
+        <h1>𝐄𝐬𝐜𝐫𝐢𝐭𝐨𝐫𝐢𝐨 𝐝𝐞 𝐀𝐝𝐯𝐨𝐜𝐚𝐜𝐢𝐚</h1> <br>
         <!-- Adicione links para as áreas de prática e serviços oferecidos -->
     </section>
 
@@ -95,7 +95,7 @@
     <!-- Seção Áreas de Atuação -->
     <section class="servicos">
         <div class="titulo1">
-            <h1 class="txt"> Principais Áreas de Atuação</h1>
+        <h1> Principais Áreas de Atuação</h1>
     </div>
 <br>
     <div class="card-container">
@@ -147,10 +147,19 @@
 
    <!-- Seção Formulário de Contato -->
    <section class="titulo1">
-    <h1 class="txt">Tenha uma orientação Jurídica de alto nível</h1><br>
-    <h3>Nosso escritório conta com profissionais que atuam diretamente na área.</h3><br>
+    <h1>
+        <span class="primeira-palavra">Tenha uma orientação</span>
+        <span class="barra"></span>
+        <span class="segunda-palavra">Jurídica de alto nível</span>
+    </h1>
+    <p>Nosso escritório conta com profissionais que atuam diretamente na área.</p>
 </section>
+
 <div class="caixa-contato">
+    <div class="texto-contato">
+        <h2>Se você tiver alguma dúvida ou precisar de assistência, não hesite em entrar em contato conosco!</h2>
+    </div>
+
     <div class="container2">
         <i class="fab fa-whatsapp icone"></i>
         <a href="https://wa.me/5545999386015" target="_blank">WhatsApp</a>
@@ -163,11 +172,9 @@
 
     <div class="container4">
         <i class="far fa-envelope icone"></i>
-        <a href="mailto:advocacia_rc@hotmail.com">Email</a>
+        <h4><a href="mailto:advocacia_rc@hotmail.com">Email</a></h4>
     </div>
 </div>
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 
     <!-- Seção Localização -->
