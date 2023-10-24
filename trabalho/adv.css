@@ -111,7 +111,7 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff;
+    background-color: #fff9f3;
     overflow: hidden;
     overflow-y: scroll
 
@@ -329,7 +329,10 @@ nav a {
     overflow: hidden; /* Impede que a imagem se estenda além do card */
     margin-right: 20px; /* Espaçamento à direita para separar os cards */
     box-shadow: 0 0 10px #212529a2;
+    background-color: white;
 }
+
+
 
 .card:last-child {
     margin-right: 0; /* Remove o espaçamento à direita do último card */
@@ -370,8 +373,9 @@ nav a {
 
 .caixa-contato{
     display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* Alinhar os contêineres à direita */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Alinhar os contêineres à direita */
     margin: 20px; /* Ajuste a margem conforme necessário */
     width: 1300px;
     margin: 0 auto;
@@ -379,9 +383,13 @@ nav a {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    align-items: flex-end; /* Alinhar os contêineres à direita */
     
+}
+.contatos{
+    background-color: #17d617;
+}
+.texto_contatos{
+    color: white;
 }
 
 h2 {
