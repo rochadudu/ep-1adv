@@ -1,0 +1,418 @@
+/* Reset de estilos para remover margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilize o cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: -webkit-linear-gradient(left,#283959,#091026);
+    color: #fff;
+    padding: 10px 20px;
+    border-bottom: 2px solid #d89700; /* Cor e estilo da linha de baixo */
+    padding-bottom: 10px;
+    position: initial;
+    height: 140px;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+header h1 {
+    font-size: 36px;
+    text-align: center;
+    color: transparent; /* Torna o texto transparente para ocultar inicialmente */
+    background-image: linear-gradient(to right, #805300, #d89700, #FFB90F, #db8f00, #805300); /* Define um gradiente de cores */
+    background-clip: text; /* Aplica o gradiente somente ao texto */
+    -webkit-background-clip: text; /* Necessário para navegadores baseados em WebKit (Safari) */
+    animation: colorChange 10s linear infinite; /* Animação para alterar as cores */
+}
+
+header h2 {
+    font-size: 36px;
+    text-align: center;
+    color: transparent; /* Torna o texto transparente para ocultar inicialmente */
+    background-image: linear-gradient(to right, #805300, #d89700, #FFB90F, #db8f00, #805300); /* Define um gradiente de cores */
+    background-clip: text; /* Aplica o gradiente somente ao texto */
+    -webkit-background-clip: text; /* Necessário para navegadores baseados em WebKit (Safari) */
+    animation: colorChange 10s linear infinite; /* Animação para alterar as cores */
+    
+}
+nav ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #d89700;
+}
+
+
+#company-name h1 {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    background: -webkit-linear-gradient(left,#283959,#091026);
+    text-align: center;
+    padding: 10px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    color: #17d617;
+    text-align: right;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilize o logotipo */
+#logo img {
+    width: 150px;
+    height: auto;
+    
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    overflow: hidden;
+    overflow-y: scroll
+
+}
+
+/* Estilo das informações de contato no cabeçalho */
+#contact-info {
+    font-size: 14px;
+    margin-top: 1px;
+}
+
+.telefo{
+    color: #ffc10798;
+}
+
+#contact-info p {
+    margin: 5px 0;
+}
+
+/* Estilo da navegação */
+nav a {
+    text-decoration: none;
+    color: #f8f8f8c9;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: right;
+}
+
+/* Estilo do conteúdo */
+#content {
+    padding: 20px;
+    background-color: #fffcfc;
+}
+
+/* Estilo do rodapé */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: -webkit-linear-gradient(left,#283959,#091026);
+    color: #fff;
+    padding: 10px 20px;
+}
+
+/* Estilize links */
+
+
+/* Media queries para tornar o CSS responsivo */
+
+@media (max-width: 768px) {
+    /* Estilos para telas menores (dispositivos móveis) */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    #company-name h1 {
+        font-size: 20px;
+    }
+
+    #logo img {
+        width: 100px;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+.container {
+    background: -webkit-linear-gradient(left,#283959,#091026);
+    box-shadow: 0 0 10px #212529;
+    border-radius: 10px;
+    color: #c5c5c5;
+    position: center;
+    width: 80%;
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px; /* Adicione preenchimento interno conforme necessário */
+}
+
+.titulo{
+    text-align: center;
+    color: #404040;
+    text-decoration: underline #d89700;
+}
+
+.carousel-wrapper{
+    height:400px;
+    position:relative;
+    width: auto;
+    margin:0 auto;
+  }
+
+ .carousel-item{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:25px 50px;
+    opacity:0;
+    transition: all 0.5s ease-in-out;
+  }
+  .arrow{
+    border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 12px;
+  }
+  
+  .arrow-prev{
+    left:-30px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(135deg);
+  }
+   
+  .arrow-next{
+    right:-30px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(-45deg);
+    }
+    .carousel-item img {
+        max-width: 100%;
+    }
+
+    
+    .arrow-prev {
+        left: 10px;
+    }
+    
+    .arrow-next {
+        right: 10px;
+    }
+  
+  .light{
+    color:white;
+  }
+  
+  @media (max-width: 480px) {
+        .arrow, .light .arrow {
+          background-size: 10px;
+          background-position: 10px 50%;
+        }
+      }
+  
+  
+  /*Select every element*/
+  [id^="item"] {
+      display: none;
+    }
+  
+  .item-1 {
+      z-index: 2;
+      opacity: 1;
+    background:url('img/R\ &\ C\ advogados.png');
+    background-size:cover;
+    }
+  .item-2{
+    background:url('img/R\ &\ C\ advogados2.png');
+     background-size:cover;
+  }
+  .item-3{
+    background:url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');
+     background-size:cover;
+  }
+  
+  *:target ~ .item-1 {
+      opacity: 0;
+    }
+  
+  #item-1:target ~ .item-1 {
+      opacity: 1;
+    }
+  
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+      z-index: 3;
+      opacity: 1;
+    }
+  
+    
+    .imagem-texto {
+        display: flex;
+        align-items: center;
+    }
+    
+    .imagem-direita  {
+        width: 300px; /* Ajuste a largura conforme necessário */
+        height: 400px;
+        float: right;
+        margin-right: 10px; /* Adicione margem à esquerda para separar a imagem do texto */
+        border-radius: 10px;
+    }
+    
+    .texto {
+        width: 60%; /* Ajuste a largura conforme necessário */
+        margin-left: 20px;
+        margin-right: unset;
+        float: left;
+    }
+
+.servicos{
+    text-align: center;
+    
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between; /* Distribui os cards igualmente na horizontal */
+}
+
+.card {
+    width: 300px; /* Largura do card */
+    border: 1px solid #ccc; /* Borda do card */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra do card */
+    overflow: hidden; /* Impede que a imagem se estenda além do card */
+    margin-right: 20px; /* Espaçamento à direita para separar os cards */
+    box-shadow: 0 0 10px #212529a2;
+}
+
+.card:last-child {
+    margin-right: 0; /* Remove o espaçamento à direita do último card */
+}
+
+.card img {
+    width: 25%; /* Garante que a imagem se ajuste à largura do card */
+    height: auto;
+    margin-top: 5px;
+}
+
+.card-body {
+    padding: 20px; /* Espaçamento interno dentro do card */
+}
+
+.card h2 {
+    font-size: 1.5rem; /* Tamanho do título */
+    margin: 0; /* Remove margens padrão */
+}
+
+.card p {
+    font-size: 1rem; /* Tamanho do texto */
+}
+
+.card a {
+    text-decoration: none;
+    color: #007BFF; /* Cor do link */
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.titulo1{
+    text-align: center;
+    color: #404040;
+}
+
+.caixa-contato{
+    width: 750px;
+    margin: 0 auto;
+    background: -webkit-linear-gradient(left,#be9200,#091026);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+h2 {
+    color: #5e5e5e;
+}
+
+
+
+.container2 {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #17d617e1;
+    border-radius: 5px;
+    height: 10px;
+}
+
+.container3 {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #171ad6;
+    border-radius: 5px;
+}
+
+.contact-option i {
+    font-size: 24px;
+    margin-right: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color: #e4e4e4;
+}

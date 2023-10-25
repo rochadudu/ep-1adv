@@ -1,0 +1,64 @@
+/* Reset de estilos padrão */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: -webkit-linear-gradient(left,#283959,#091026);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+/* Estilo do menu de navegação */
+nav ul {
+    list-style: none;
+    text-align: center;
+    background: -webkit-linear-gradient(left,#283959,#091026);
+    padding: 10px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #d89700;
+    font-weight: bold;
+}
+
+/* Estilo das seções */
+
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilo do rodapé */
+footer {
+    background: -webkit-linear-gradient(left,#283959,#091026);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilizar links */
+a {
+    color: #0074D9;
+}
+
+/* Mudar cor do link ao passar o mouse */
+a:hover {
+    color: #ffffff;
+}

@@ -1,0 +1,584 @@
+/* Reset de estilos para remover margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilize o cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: -webkit-linear-gradient(left,#283959,#091026);
+    color: #fff;
+    padding: 10px 20px;
+    border-bottom: 2px solid #d89700; /* Cor e estilo da linha de baixo */
+    padding-bottom: 10px;
+    position: initial;
+    height: 140px;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+header h1 {
+    font-size: 36px;
+    text-align: center;
+    color: transparent; /* Torna o texto transparente para ocultar inicialmente */
+    background-image: linear-gradient(to right, #805300, #d89700, #FFB90F, #db8f00, #805300); /* Define um gradiente de cores */
+    background-clip: text; /* Aplica o gradiente somente ao texto */
+    -webkit-background-clip: text; /* Necessário para navegadores baseados em WebKit (Safari) */
+    animation: colorChange 10s linear infinite; /* Animação para alterar as cores */
+}
+
+header h2 {
+    font-size: 36px;
+    text-align: center;
+    color: transparent; /* Torna o texto transparente para ocultar inicialmente */
+    background-image: linear-gradient(to right, #805300, #d89700, #FFB90F, #db8f00, #805300); /* Define um gradiente de cores */
+    background-clip: text; /* Aplica o gradiente somente ao texto */
+    -webkit-background-clip: text; /* Necessário para navegadores baseados em WebKit (Safari) */
+    
+    
+}
+nav ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #d89700;
+}
+
+.animated-header {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+/* Estilo do cabeçalho fixo */
+.animated-header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+ 
+#company-name h1 {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    background: -webkit-linear-gradient(left,#283959,#091026);
+    text-align: center;
+    padding: 10px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    color: #17d617;
+    text-align: right;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilize o logotipo */
+#logo img {
+    width: 150px;
+    height: auto;
+    
+}
+
+
+/* Estilo do corpo da página */
+body {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff9f2;
+    overflow: hidden;
+    overflow-y: scroll
+
+}
+
+/* Estilo das informações de contato no cabeçalho */
+#contact-info {
+    font-size: 14px;
+    margin-top: 1px;
+}
+
+.telefo{
+    color: #ffc10798;
+}
+
+#contact-info p {
+    margin: 5px 0;
+}
+
+/* Estilo da navegação */
+nav a {
+    text-decoration: none;
+    color: #f8f8f8c9;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: right;
+}
+
+/* Estilo do conteúdo */
+#content {
+    padding: 20px;
+    background-color: #fffcfc;
+}
+
+
+
+
+.container {
+    background-image: url('img/R\ &\ C\ ADVOGADOS.png');
+    background: -webkit-linear-gradient(left,#283959,#091026);
+    box-shadow: 0 0 10px #212529;
+    border-radius: 10px;
+    color: #c5c5c5;
+    position: center;
+    width: 80%;
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px; /* Adicione preenchimento interno conforme necessário */
+}
+
+.titulo{
+    text-align: center;
+    color: #404040;
+}
+
+.carousel-wrapper{
+    height:400px;
+    position:relative;
+    width: auto;
+    margin:0 auto;
+  }
+
+ .carousel-item{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:25px 50px;
+    opacity:0;
+    transition: all 0.5s ease-in-out;
+  }
+  .arrow{
+    border: solid rgb(207, 142, 0);
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 12px;
+  }
+  
+  .arrow-prev{
+    left:-30px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(135deg);
+  }
+   
+  .arrow-next{
+    right:-30px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(-45deg);
+    }
+    .carousel-item img {
+        max-width: 100%;
+    }
+
+    
+    .arrow-prev {
+        left: 10px;
+    }
+    
+    .arrow-next {
+        right: 10px;
+    }
+  
+  .light{
+    color:white;
+  }
+  
+  @media (max-width: 480px) {
+        .arrow, .light .arrow {
+          background-size: 10px;
+          background-position: 10px 50%;
+        }
+      }
+  
+  
+  /*Select every element*/
+  [id^="item"] {
+      display: none;
+    }
+  
+  .item-1 {
+      z-index: 2;
+      opacity: 1;
+    background:url('img/R\ &\ C\ ADVOGADOS.png');
+    background-size:cover;
+    }
+  .item-2{
+    background:url('img/what\ you\ focus\ on\,\ is\ what\ multiplies.mp4');
+     background-size:cover;
+  }
+  .item-3{
+    background:url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');
+     background-size:cover;
+  }
+  
+  *:target ~ .item-1 {
+      opacity: 0;
+    }
+  
+  #item-1:target ~ .item-1 {
+      opacity: 1;
+    }
+  
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+      z-index: 3;
+      opacity: 1;
+    }
+  
+    
+    .imagem-texto {
+        display: flex;
+        align-items: center;
+    }
+    
+    .imagem-direita  {
+        width: 300px; /* Ajuste a largura conforme necessário */
+        height: 400px;
+        float: right;
+        margin-right: 10px; /* Adicione margem à esquerda para separar a imagem do texto */
+        border-radius: 10px;
+    }
+    
+    .texto {
+        width: 60%; /* Ajuste a largura conforme necessário */
+        margin-left: 20px;
+        margin-right: unset;
+        float: left;
+    }
+
+    
+
+.servicos{
+    text-align: center;
+    
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between; /* Distribui os cards igualmente na horizontal */
+}
+
+.card {
+    width: 300px; /* Largura do card */
+    border: 1px solid #ccc; /* Borda do card */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra do card */
+    overflow: hidden; /* Impede que a imagem se estenda além do card */
+    margin-right: 20px; /* Espaçamento à direita para separar os cards */
+    box-shadow: 0 0 10px #212529a2;
+    background-color: white;
+    cursor: pointer; /* Transforma o cursor em uma mãozinha ao passar o mouse */
+}
+
+
+
+.card:last-child {
+    margin-right: 0; /* Remove o espaçamento à direita do último card */
+}
+
+.card img {
+    width: 25%; /* Garante que a imagem se ajuste à largura do card */
+    height: auto;
+    margin-top: 5px;
+}
+
+.card-body {
+    padding: 20px; /* Espaçamento interno dentro do card */
+}
+
+.card h2 {
+    font-size: 1.5rem; /* Tamanho do título */
+    margin: 0; /* Remove margens padrão */
+}
+
+.card p {
+    font-size: 1rem; /* Tamanho do texto */
+}
+
+.card a {
+    text-decoration: none;
+    color: #007BFF; /* Cor do link */
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.titulo1{
+    text-align: center;
+    color: #404040;
+}
+
+.caixa-contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Alinhar os contêineres à direita */
+    margin: 20px; /* Ajuste a margem conforme necessário */
+    width: 1300px;
+    margin: 0 auto;
+    background: -webkit-linear-gradient(left,#283959,#091026);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+.contatos{
+    background-color: #17d61700;
+}
+.texto_contatos{
+    text-align: center; /* Centraliza horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center;
+    color: white;
+}
+
+h2 {
+    color: #5e5e5e;
+}
+
+.container2, .container3, .container4 {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alinhar o conteúdo à direita */
+    border-radius: 5px;
+    height: 50px;
+    width: 600px;
+    margin: 10px 0; /* Ajuste a margem conforme necessário */
+}
+
+.container2 {
+    background-color: #17d617e1;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 4px 6px #000000ab;
+    cursor: pointer; /* Transforma o cursor em uma mãozinha ao passar o mouse */
+}
+
+.container3 {
+    background-color: #171ad6;
+    color: rgba(9, 255, 0, 0.801);
+    box-shadow: 0 4px 6px #000000ab;
+    cursor: pointer; 
+}
+
+.container4 {
+    background-color: #e60000bd;
+    color: rgb(241, 241, 241);
+    box-shadow: 0 4px 6px #000000ab;
+    cursor: pointer; 
+}
+
+.icone {
+    margin-right: 10px; 
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.container2:hover{
+    background-color: #2ecc71; 
+}
+
+.container3:hover{
+    background-color: #1e3adb; 
+}
+
+.container4:hover{
+    background-color: #d32626; 
+}
+
+
+.txt {
+    font-size: 36px; 
+}
+
+
+.Localizacão {
+    text-align: center; 
+}
+
+
+.Localizacão h2 {
+    margin-top: 20px;
+    font-size: 30px; 
+    margin-bottom: 20px; 
+    color: rgb(43, 43, 43);
+}
+
+/* Estilos para o mapa do Google */
+.Localizacão iframe {
+    width: 80%; 
+    max-width: 800px; 
+    height: 400px; 
+    border: 2px solid #ccc; 
+    margin: 0 auto; 
+}
+
+
+/* Estilos para tornar o mapa responsivo em telas menores */
+@media (max-width: 768px) {
+    iframe {
+        height: 300px; /* Ajuste a altura para telas menores */
+    }
+}
+
+.rodape {
+    background: -webkit-linear-gradient(left,#283959,#091026);
+    color: #fff;
+    padding: 20px 0;
+}
+
+.algo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.coluna {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.fa {
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Estilo para a barra da newsletter */
+#newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#newsletter-email {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#newsletter-submit {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 300px;
+}
+
+#newsletter-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo padrão do cabeçalho */
+
+/* Estilos para telas menores (dispositivos móveis) */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    header #titulo1 {
+        margin-top: 10px;
+    }
+
+    header #contact-info {
+        margin-top: 10px;
+    }
+
+    .carousel-wrapper {
+        margin: 0;
+    }
+
+    .titulo {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .container .imagem-texto {
+        flex-direction: column;
+    }
+
+    .container .imagem-texto img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .titulo1 {
+        text-align: center;
+    }
+
+    .container .imagem-texto .texto p {
+        margin: 10px 0;
+    }
+
+    .servicos .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .caixa-contato {
+        flex-direction: column;
+    }
+
+    .contatos {
+        margin-top: 10px;
+    }
+
+    .contatos a {
+        margin-right: 10px;
+    }
+}
+
+/* Estilos adicionais para telas maiores, se necessário */
+@media (min-width: 1024px) {
+    /* Adicione estilos específicos para telas maiores aqui, se necessário. */
+}
